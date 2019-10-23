@@ -3,5 +3,6 @@ body {
 }
 
 .body-container {
-    
+    background:lightgray;
+    color:blue;
 }
