@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
     $(".body-container").on('click', function(){
-        $(".body-container").css("background-color", "blue");
+        if($(".body-container").css("background-color") == 'rgb(211, 211, 211)'){
+            $(".body-container").css("background-color", "blue");
+        }
     });
 
 });
