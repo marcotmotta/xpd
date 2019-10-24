@@ -1,12 +1,7 @@
-/* $(document).ready(function() {
-    $(".body-container").css("background-color", "blue");
-}); */
+$(document).ready(function() {
 
-$(".body-container").on('click', function() {
-    $(".body-container").css("background-color", "red");
+    $(".body-container").on('click', function(){
+        $(".body-container").css("background-color", "blue");
+    });
+
 });
-
-function changeBackground() {
-    $(".body-container").css("background-color", "red");
-    alert('a');
-}
