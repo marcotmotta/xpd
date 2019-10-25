@@ -6,4 +6,26 @@ $(document).ready(function() {
         }
     });
 
+    $("#alo-button").on('click', function(){
+        let url = 'https://jsonplaceholder.typicode.com/posts';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            //data: ,
+            //dataType: ,
+            success: function(result){
+                let r = $("<div>");
+                r.addClass('alo-result');
+                r.attr('id', 'alo-result');
+                r.css('height', '50');
+                r.css('background-color', 'green');
+                //r.append(JSON.stringify(result));
+                $(".body-container").append(r);
+            },
+            error: function(error){
+                console.log('error ${error}');
+            }
+        });
+    });
+
 });
